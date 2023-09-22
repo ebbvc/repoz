@@ -4,7 +4,8 @@ wynik = 0
 if(a > b){
     wynik = a - b
 
-}else{
+}
+else{
     wynik = b - a
 }
 document.write("Wynik odejmowania to " + wynik)
