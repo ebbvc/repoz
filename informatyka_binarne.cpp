@@ -6,15 +6,14 @@ int main()
 	int szukana;
 	cout << "Podaj szukana: "; cin >> szukana;
 
-	wyszukiwanie(szukana, tab);
-	if (wyszukiwanie(szukana, tab) == -1) {
-		cout << "B³¹d";
+	binarne(szukana, tab);
+	if (binarne(szukana, tab) == -1) {
+		cout << "BÂ³Â¹d";
 	}else {
-		cout << "Liczba " << szukana << " wystêpuje pod indeksem " << wyszukiwanie(szukana, tab) << endl;
+		cout << "Liczba " << szukana << " wystepuje pod indeksem " << binarne(szukana, tab) << endl;
 	}
 } 
-
-int wyszukiwanie(int szukana, int tab[]) {
+int binarne(int szukana, int tab[]) {
 	int pozycja;
 	int l = 0;
 	int p = 15;
